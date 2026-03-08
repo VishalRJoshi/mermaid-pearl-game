@@ -32,6 +32,12 @@ const GameScreen = (() => {
     Network.on('countdown', onCountdown);
 
     Input.init();
+
+    // Show mobile controls if touch device
+    const mobileControls = document.getElementById('mobileControls');
+    if (mobileControls && Input.getIsMobile()) {
+      mobileControls.style.display = 'flex';
+    }
   }
 
   function onGameState(data) {
@@ -166,6 +172,10 @@ const GameScreen = (() => {
     Network.off('countdown', onCountdown);
     gameState = null;
     prevState = null;
+
+    // Hide mobile controls
+    const mobileControls = document.getElementById('mobileControls');
+    if (mobileControls) mobileControls.style.display = 'none';
   }
 
   return { enter, exit, update, render };
