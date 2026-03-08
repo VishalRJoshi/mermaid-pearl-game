@@ -1,0 +1,13 @@
+{
+  "name": "mermaid-pearl-game",
+  "version": "1.0.0",
+  "description": "A 2v2 underwater mermaid pearl game for the browser",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.4"
+  }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mermaid Pearl Game</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="gameCanvas"></canvas>
+  <div id="ui-overlay">
+    <!-- Screens rendered here by JS -->
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/constants.js"></script>
+  <script src="/js/input.js"></script>
+  <script src="/js/network.js"></script>
+  <script src="/js/renderer.js"></script>
+  <script src="/js/screens/TitleScreen.js"></script>
+  <script src="/js/screens/LobbyScreen.js"></script>
+  <script src="/js/screens/GameScreen.js"></script>
+  <script src="/js/screens/EndScreen.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
